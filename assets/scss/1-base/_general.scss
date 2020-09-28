@@ -1,0 +1,60 @@
+body,
+html {
+    direction: rtl;
+    text-align: right;
+    font-family: "iransans";
+    scroll-behavior: smooth;
+    background-color: #fff;
+    color: var(--general-dark-text);
+    overflow-x: hidden;
+}
+
+/* override bootstrap container width */
+.container {
+    max-width: 1356px !important;
+}
+
+/* remove negative margins from row */
+.row {
+    max-width: 100%;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+/* anchor link */
+a {
+    color: var(--general-secondary);
+
+    &:hover {
+        color: var(--general-secondary);
+        text-decoration: none;
+    }
+
+    &:active,
+    &:focus {
+        outline: 0;
+    }
+}
+
+/* set object fit for images to avoin bad ratio */
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/* tables */
+table {
+    td,
+    th {
+        border: 1px solid #eee;
+        padding: 0.3rem;
+    }
+
+    th {
+        background-color: #eee;
+    }
+
+    a {
+        color: var(--general-dark-text);
+    }
+}
