@@ -15,7 +15,7 @@
  * For more information on hooks, actions, and filters,
  * see http://codex.wordpress.org/Plugin_API
  *
- * @package ThunerWP
+ * @package ThunderWP
  * @since   1.0.0
  */
 
@@ -29,6 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @since 1.0.0
  */
 define( 'THUNDERWP_THEME_URI', get_template_directory_uri() );
+define( 'THUNDERWP_THEME_DIR', get_template_directory() );
 define( 'THUNDERWP_THEME_VERSION', wp_get_theme()->get( 'Version' ) );
 
 /**
@@ -36,7 +37,7 @@ define( 'THUNDERWP_THEME_VERSION', wp_get_theme()->get( 'Version' ) );
  *
  * @since 1.0.0
  */
-final class ThunerWP {
+final class ThunderWP {
 
 	/**
 	 * Class Constructor
@@ -98,7 +99,7 @@ final class ThunerWP {
 	 * @since 1.0.0
 	 */
 	public static function include_functions() {
-		// require_once THUNDERWP_THEME_URI . '/inc/breadcrumb.php';
+		// require_once THUNDERWP_THEME_DIR . '/inc/breadcrumb.php';
 	}
 
 
@@ -164,7 +165,7 @@ final class ThunerWP {
 		/** Blog Sidebar */
 		register_sidebar(
 			array(
-				'name'         => esc_html__( 'ساید بار وبلاگ', 'thunderwp' ),
+				'name'         => esc_html__( 'سایدبار وبلاگ', 'thunderwp' ),
 				'id'           => 'sidebar_blog',
 				'description'  => esc_html__( 'سایدبار وبلاگ', 'thunderwp' ),
 				'before_title' => '<' . $heading . ' class="widget__title">',
@@ -302,4 +303,4 @@ final class ThunerWP {
 		$elementor_theme_manager->register_all_core_location();
 	}
 }
-new ThunerWP();
+new ThunderWP();

@@ -1,3 +1,7 @@
+html {
+    overflow-x: hidden;
+}
+
 body,
 html {
     direction: rtl;
@@ -6,12 +10,11 @@ html {
     scroll-behavior: smooth;
     background-color: #fff;
     color: var(--general-dark-text);
-    overflow-x: hidden;
 }
 
 /* override bootstrap container width */
 .container {
-    max-width: 1356px !important;
+    max-width: var(--container-width) !important;
 }
 
 /* remove negative margins from row */
@@ -23,10 +26,11 @@ html {
 
 /* anchor link */
 a {
-    color: var(--general-secondary);
+    color: var(--general-anchor-link);
+    text-decoration: none;
 
     &:hover {
-        color: var(--general-secondary);
+        color: var(--general-anchor-link);
         text-decoration: none;
     }
 
@@ -52,9 +56,5 @@ table {
 
     th {
         background-color: #eee;
-    }
-
-    a {
-        color: var(--general-dark-text);
     }
 }

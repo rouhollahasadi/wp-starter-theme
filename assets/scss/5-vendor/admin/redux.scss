@@ -1,0 +1,50 @@
+$blue: #2948ff;
+$green: #00c178;
+$red: #ff5150;
+
+.redux-form-wrapper {
+    background-color: #f6f5fa;
+}
+
+.redux-container {
+    border: 1px solid #ddd;
+    box-shadow: 0 5px 30px #ddd;
+    border-radius: 10px;
+
+    /* -------------- Redux Sidebar -------------- */
+    @import "redux/redux-sidebar";
+
+    /* -------------- Redux Header -------------- */
+    @import "redux/redux-header";
+
+    /* -------------- Redux Main -------------- */
+    @import "redux/redux-main";
+
+    /* -------------- Redux Footer -------------- */
+    #redux-footer {
+        right: auto !important;
+    }
+
+    .ui-accordion-content {
+        .button.media_upload_button {
+            display: none;
+        }
+    }
+
+    [data-id="shop_atts"] { 
+        .ui-accordion-content {
+            .button.media_upload_button {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+body.rtl {
+    .redux-container {
+        .redux-save-warn.notice-yellow {
+            left: 21px;
+            right: 183px;
+        }
+    }
+}

@@ -6,9 +6,4 @@
  * @since 1.0.0
  */
 
-get_header();
-?>
-
-
-<?php
-get_footer();
+get_template_part( 'archive' );
