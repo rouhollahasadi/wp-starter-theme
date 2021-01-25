@@ -6,7 +6,7 @@ A Wordpress Stater Theme
   <li>Sass 7-1 pattern </li>
   <li>Normalize</li>
   <li>Elementor</li>
-  <li>Webpack and babel configuration</li>
+  <li>Webpack configuration</li>
   <li>HTML5shiv</li>
 </ul>
 
